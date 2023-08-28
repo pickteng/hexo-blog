@@ -1,0 +1,348 @@
+## Acrylic主题配置文件
+############################################################################################################
+# 为避免主题更新后，配置文件被覆盖，请复制一份此文件到站点根目录下的_config.Acrylic.yml文件中，修改_config.Acrylic.yml文件中的配置
+############################################################################################################
+# 修改此文件前，请仔细阅读官方文档：https://next-docs.acrylic.org.cn/
+############################################################################################################
+
+
+# 站点设置
+site:
+  name:                   # 左上角显示内容
+    class:  text          #i_class/text/img 
+    custom: Teng       #自定义内容
+  siteIcon: /img/avatar.webp # 网页icon
+  icon: /img/avatar.webp     # 页脚的icon、加载动画默认的icon
+  icp:                       # ICP
+
+# 导航栏
+nav:
+#导航栏左侧
+  left:
+    enable: true
+    menu:
+      我的: #一级分类
+        博客:  #链接名称
+          icon: /img/avatar.webp
+          url: https://pickteng.github.io/
+# 导航栏内容
+  menu:
+    文库:
+      url: false
+      child:
+        文章列表:
+          url: /archives/
+          icon: fas fa-box-archive
+        全部分类:
+          url: /categories/
+          icon: fas fa-cube
+        全部标签:
+          url: /tags/
+          icon: fas fa-tags
+    友链:
+      url: false
+      child:
+        友链鱼塘:
+          url: /fcircle/
+          icon: fas fa-fish-fins
+        友情链接:
+          url: /links/
+          icon: fas fa-user-group
+        宝藏博主:
+          url: javascript:travelling()
+          icon: fas fa-bus
+
+# 导航栏右侧快捷菜单
+  right: # @todo 允许用户自定义
+    travellings: true   #开往
+    random: true        #
+    console: true       #控制台
+
+# heo式顶部一大坨
+hometop:
+  bbtime: true
+  banner: # 轮播图
+    enable: true
+    title: 生命不息<br>奋斗不止
+    url: blog.zhheo.com
+    icon: 
+      AE:
+        img: /img/icon/ae.png
+        color: '#989bf8'
+      Sketch:
+        img: /img/icon/Sketch.png
+        color: '#ffffff'
+      Docker:
+        img: /img/icon/docker.png
+        color: '#57b6e6'
+      ps:
+        img: /img/icon/ps.png
+        color: '#4082c3'
+      FinalCutPro:
+        img: /img/icon/FinalCutPro.png
+        color: '#ffffff'
+      Python:
+        img: /img/icon/Python.png
+        color: '#ffffff'
+      Swift:
+        img: /img/icon/Swift.png
+        color: '#eb6840'
+      Principle:
+        img: /img/icon/Principle.png
+        color: '#8f55ba'
+      illustrator:
+        img: /img/icon/illustrator.png
+        color: '#f29e39'
+      CSS3:
+        img: /img/icon/CSS3.png
+        color: '#2c51db'
+      JS:
+        img: /img/icon/JS.png
+        color: '#f7cb4f'
+      Git:
+        img: /img/icon/git.png
+        color: '#df5b40'
+ 
+  # 该配置项为 banner 下方的分类配置, 从左到右分别是 G1、G2、G3
+  categoryGroup:
+    G1:
+      name: 资源下载
+      icon: fas fa-dove
+      url: /tags/资源下载/
+    G2:
+      name: 常见问题 #分类名称
+      icon: fas fa-burn #分类图标
+      url: /tags/常见问题/ #分类链接
+    G3:
+      name: 技能学习
+      icon: fas fa-book
+      url: /tags/技能学习/
+
+  recommendList:
+    sup: 置顶文章
+    title: 让Acrylic成为您的Hexo主题
+    url: /
+    img: /img/acrylic.png
+    color: '#006a73'
+
+# 个人卡片
+aside:
+  home:
+    noSticky: "about,flip"
+    Sticky: "newestPost,allInfo"
+  post:
+    noSticky: "about"
+    Sticky: "newestPost"
+  page:
+    noSticky: "about,flip"
+    Sticky: "newestPost,allInfo"
+
+  card:
+    avatar: 
+    content: 这有关于<b>开发</b>、<b>技术</b>相关的问题和看法，还有一些资源的下载</b>。<br>相信你可以在这里找到对你有用的知识和教程。
+    information:
+      Github:
+        icon: fa-brands fa-github
+        url: https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next
+      Mail:
+        icon: fa-solid fa-envelope
+        url: 18562238651@tengcheng.onmicrosoft.com
+    button:
+      text: 个人主页
+      url: https://pickteng.github.io/
+
+  # flip(翻转卡片) 配置
+  flip:
+    color: '#0099FF'
+    face:
+      title: QQ
+      desc: 如遇到问题可以与我交流
+    backface:
+      title: 扫一扫
+      desc: 获取最新信息和帮助
+      img: /img/qqgroup.png
+
+  # toc(文章目录) 配置
+  toc: 
+    post: true #文章页是否显示目录
+    page: false #页面是否显示目录
+
+  # 建站时间
+  siteinfo:
+    postcount: true
+    wordcount: false
+    pv: false
+    uv: false
+    updatetime: false
+    runtimeenable: true
+    runtime: '2020-08-24T12:00:00Z'
+
+# 页脚
+footer:
+  information: # 联系信息配置
+    left:
+      Github:
+        icon: fa-brands fa-github
+        url: https://github.com/pickteng
+      Mail:
+        icon: fa-solid fa-envelope
+        url: 18562238651@tengcheng.onmicrosoft.com
+    right:
+      网易云:
+        icon: fa-solid fa-music
+        url: https://music.163.com/#/user/home?id=1367680585
+      bilibili:
+        icon: fa-brands fa-bilibili
+        url: https://space.bilibili.com/228441877?spm_id_from=333.874.0.0
+
+  group:
+    导航:
+      文章归档: /archives/
+      文章分类: /categories/
+      文章标签: /tags/
+      友链: /link/
+    服务:
+      51la统计: https://51.la/
+      百度统计: https://tongji.baidu.com/
+      TianliCDN: https://ql.tianli0.top/
+    Acrylic:
+      主题官网: https://acrylic.zhheo.com/
+      Github: https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic
+      Heo: https://blog.zhheo.com/
+    推荐友链:
+      Heo: https://blog.zhheo.com/
+      Akilar: https://akilar.top
+
+  randomlink: false
+
+  cdn:
+    url: 
+    desc: 
+  rss:
+    url: 
+  license:
+    url: https://creativecommons.org/licenses/by/4.0/
+    icon: fas fa-closed-captioning
+
+
+page:
+  error: true
+  tags: true
+  categories: true
+  default:
+    cover: /img/hello.jpg   
+
+# 文章页默认设置
+post:
+  default:
+    cover: /img/hello.jpg #文章缩略图
+    locate: 山东          #作者IP
+    copyright: 原创       #原创/转载  
+    excerpt: 100          #SEO用，权重
+  meta: # 文章顶部的一些信息
+    date: true #是否显示日期
+    updated: false #是否显示更新日期
+    locate: true #是否显示作者IP
+    wordcount: false  #是否显示字数
+    readtime: false #是否显示阅读时间
+    pv: false #是否显示访问量
+    comment: false #是否显示评论数      
+  award: # 文章底部赞赏功能
+    enable: false
+    wechat: #微信
+    alipay: #支付宝
+    url: #打赏名单url
+  covercolor: #文章cover取色  
+    enable: false
+    local: false  
+
+# 关于界面
+about: true
+
+# 404页面
+errorpage:
+  img: /img/404.png
+  text: =awa= 页面走丢了
+  recommendList: true
+
+# 懒加载
+lazyload:
+  enable: true
+  placeholder: /img/loading.gif
+  errorimg: /img/loading.gif
+
+# 图片灯箱
+lightbox: true
+
+#代码高亮增强
+hightlight:
+  enable: false
+  hightlimit: 200
+
+# 加载动画
+loading:
+  fullpage: false
+  pace: false
+
+# 第三方设置
+thirdparty:
+  wordcount: true # 是否开启字数统计
+  busuanzi: # 开启不蒜子统计配置
+    enable: false
+    usecomment: false #当评论系统开启时文章页面使用评论系统的统计数据
+  search: # 搜索
+    algolia_search: #algolia搜索
+      enable: true
+      hits:
+        per_page: 6
+    local_search: #本地搜索
+      enable: false
+      preload: false
+      CDN:
+    
+  aplayer: # 开启aplayer配置,开启后会在右下角显示音乐胶囊
+    enable: false
+    server: netease
+    id: 1708664797
+    api: "https://music.startly.cn/?server=netease&type=pic" #自定义api
+  #中控台拓展
+  consolePlus: true
+
+# 评论
+comment:
+  enable: false
+  twikoo:
+    envId:
+    # region: ap-shanghai
+    path: window.location.pathname
+
+
+# 插入代码到头部 </head> 之前 和 底部 </body> 之前
+# 插入额外代码 如：统计，广告等
+extends: 
+  head: # 在head中插入
+    # - <script></script>
+  body: # 在body中插入
+
+# 非必要勿动
+cdn:
+  head:
+    pacejs: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/pace/1.2.4/pace.min.js
+    fontawesomecss: https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css
+    snackbarcss: /lib/snackbar.min.css
+    qrcodejs: /lib/qrcode.min.js
+    twikoojs: https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js
+    instantsearch: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/instantsearch.js/4.39.0/instantsearch.production.min.js
+    algolia: https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/algoliasearch/4.12.1/algoliasearch-lite.umd.min.js
+  body:
+    swipercss: /lib/swiper.min.css
+    pjaxjs: /lib/pjax.min.js
+    lazyloadjs: /lib/lazyload.min.js
+    snackbarjs: /lib/snackbar.min.js
+    viewimagejs: /lib/view-image.min.js
+    waterfalljs: /lib/waterfall.min.js
+    swiperjs: /lib/swiper.min.js
+    busuanzijs: https://npm.elemecdn.com/penndu@1.0.0/bsz.js
+    aplayercss: https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css
+    aplayerjs: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
+    metingjs: lib/meting.min.js

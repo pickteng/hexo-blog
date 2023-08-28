@@ -1,0 +1,10 @@
+# 通知页面
+essay_list:
+  - content: 欢迎来到我的博客~
+    date: 2023-03-22 08:00:00
+    # link: https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next/issues
+    # image:
+    #   - https://p.adil.com.cn/uPic/n66Lr2.jpg.png
+    music:
+      id: 001lePVO36SNSo
+      server: tencent

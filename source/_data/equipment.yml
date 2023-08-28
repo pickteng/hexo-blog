@@ -1,0 +1,12 @@
+# 设备页面
+- class_name: 生产力
+  description: 提升自己生产效率的硬件设备
+  equipment_list:
+    - name: MacBook Pro
+      specification: specification
+      description: description
+      image: https://xxx.com/images/macbook.png
+    - name: MacBook
+      specification: specification
+      description: description
+      image: https://xxx.com/images/macbook.png

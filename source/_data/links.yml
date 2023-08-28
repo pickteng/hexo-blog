@@ -1,0 +1,71 @@
+# 友链页面
+banner:
+      - name: Adil
+        link: https://blog.adil.com.cn
+        avatar: https://tucdn.wpon.cn/2023/04/06/15dbbb2004b44.jpg
+
+      - name: Akilar
+        link: https://akilar.top
+        avatar: https://bu.dusays.com/2022/08/14/62f87864834ae.png
+
+      - name: 张洪Heo
+        link: https://blog.zhheo.com
+        avatar: https://img.zhheo.com/i/2022/08/19/62ff32fa28da1.png
+
+
+links:  
+  - class_name: 大佬们
+    descr: 一些大佬
+    type: card
+    link_list:
+      - name: Adil
+        link: https://blog.adil.com.cn
+        avatar: https://tucdn.wpon.cn/2023/04/06/15dbbb2004b44.jpg
+        descr: BW/HANA顾问,BI工程师,数据分析师,数据科学家。
+        topimg: https://tucdn.wpon.cn/2023/04/06/126fba2e88c54.png
+        
+      - name: Akilar
+        link: https://akilar.top
+        avatar: https://bu.dusays.com/2022/08/14/62f87864834ae.png
+        topimg: /img/acrylic.png
+        descr: 欢迎光临糖果屋
+        rss: /atom.xml
+
+      - name: 张洪Heo
+        link: https://blog.zhheo.com
+        avatar: https://img.zhheo.com/i/2022/08/19/62ff32fa28da1.png
+        topimg: /img/acrylic.png
+        descr: 分享设计与科技生活
+        rss: /rss.xml
+
+      - name: 安知鱼`Blog
+        link: https://anzhiy.cn
+        avatar: https://image.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg
+        topimg: /img/acrylic.png
+        descr: 生活明朗，万物可爱
+        tag: 技术
+        rss: /atom.xml
+
+      - name: Leonus
+        link: https://blog.leonus.cn
+        avatar: https://q1.qlogo.cn/g?b=qq&nk=553344777&s=5
+        topimg: /img/acrylic.png
+        descr: 进一寸有进一寸的欢喜。
+        tag: 技术
+        rss: /atom.xml
+
+  # - class_name: 朋友们
+  #   descr: 一些志同道合的朋友
+  #   type: item
+  #   link_list:
+  #     - name: Tianli
+  #       link: https://tianli-blog.club
+  #       avatar: https://img1.tianli0.top/logo.png
+  #       descr: 惟其不可能，所以才相信。
+  #       rss: /feed/
+
+  #     - name: 葱苓
+  #       link: https://blog.itciraos.cn
+  #       avatar: https://bu.dusays.com/2023/01/07/63b96bd7565ce.png
+  #       descr: Dare && Do
+  #       rss: /atom.xml
