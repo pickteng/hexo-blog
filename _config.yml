@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://pickteng.github.io/
+url: https://pickteng.github.io/ # 搜索跳转路径前缀
 # permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink.html
 permalink_defaults:
@@ -117,6 +117,7 @@ theme: Acrylic
 # Algolia搜索
 algolia:
   applicationID: '7A3DP0CYW1'
+  appId: '7A3DP0CYW1'
   apiKey: '6a1c10466760dc14c7a2df61ec3e4ac1'
   indexName: 'hexo'
 
