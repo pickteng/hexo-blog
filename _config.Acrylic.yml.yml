@@ -292,11 +292,11 @@ thirdparty:
     usecomment: false #当评论系统开启时文章页面使用评论系统的统计数据
   search: # 搜索
     algolia_search: #algolia搜索
-      enable: true
+      enable: false
       hits:
         per_page: 6
     local_search: #本地搜索
-      enable: false
+      enable: true
       preload: false
       CDN:
     

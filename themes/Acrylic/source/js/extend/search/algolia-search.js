@@ -7,7 +7,7 @@ class search{
     utils.fadeIn($searchDialog, '0.5')
     document.addEventListener('keydown', function f (event) {
       if (event.code === 'Escape') {
-        closeSearch()
+        search.closeSearch()
         document.removeEventListener('keydown', f)
       }
     })
